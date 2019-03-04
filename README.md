@@ -1,6 +1,8 @@
-Welcome to the primax_4e90_keyboard wiki!
+Along with the 2018 HP Envy 34" curved all in one computer comes an HP Wireless 800 Combo keyboard and mouse made by PRIMAX:
 
-Along with the 2018 HP Envy 34" curved all in one computer comes an HP Wireless 800 Combo keyboard and mouse made by PRIMAX. Vendor ID of 0x0461 and device ID 0x4e90. With existing kernel driver as of 4.20.13, the mouse would work, however the keyboard would only respond with certain keys... the super key, and keys used to control brightness, volume, etc.
+https://store.hp.com/us/en/pdp/hp-pavilion-wireless-keyboard-and-mouse-800
+
+It has a vendor ID of 0x0461 and device ID 0x4e90. With existing kernel driver (as of 4.20.13), the mouse would work, however the keyboard would only respond with certain keys... the super key, and keys used to control brightness, volume, etc.  All letter, number, keypad, and other normal keys did not respond.
 
 After some digging, found this possible fix:
 
