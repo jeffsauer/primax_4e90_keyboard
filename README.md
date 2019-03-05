@@ -33,6 +33,6 @@ cd /lib/modules/4.20.13-042013-generic/kernel/drivers/hid
 mv hid-primax.ko hid-primax.ko.orig
 cp ~/kernels/linux-4.20.13/drivers/hid/hid-primax.ko .
 
-add /lib/modules/4.20.13-042013-generic/kernel/drivers/hid/hid-primax to /etc/modules-load.d/modules.conf
+add hid_primax to /etc/modules-load.d/modules.conf
 
 reboot
