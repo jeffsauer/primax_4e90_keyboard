@@ -22,16 +22,15 @@ Update kernel Makefile SUBLEVEL to match running kernel. e.g. set SUBLEVEL = 13-
 
 Copy config file to kernel directory. e.g. cp /boot/config-4.20.13-042013-generic .config
 
+```
 cd ~/kernels/linux-4.20.13
-
 make prepare scripts
-
 make modules SUBDIRS=drivers/hid
-
 sudo -i
 cd /lib/modules/4.20.13-042013-generic/kernel/drivers/hid
 mv hid-primax.ko hid-primax.ko.orig
 cp ~/kernels/linux-4.20.13/drivers/hid/hid-primax.ko .
+```
 
 add hid_primax to /etc/modules-load.d/modules.conf
 
