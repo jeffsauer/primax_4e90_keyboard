@@ -24,7 +24,7 @@ Copy config file to kernel directory. e.g. cp /boot/config-4.20.13-042013-generi
 
 ```
 cd ~/kernels/linux-4.20.13
-make prepare scripts
+make oldconfig prepare scripts
 make modules SUBDIRS=drivers/hid
 sudo -i
 cd /lib/modules/4.20.13-042013-generic/kernel/drivers/hid
